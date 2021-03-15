@@ -1,0 +1,793 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>MainWindow</class>
+ <widget class="QMainWindow" name="MainWindow">
+  <property name="enabled">
+   <bool>true</bool>
+  </property>
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>600</width>
+    <height>600</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>Sudoku</string>
+  </property>
+  <widget class="QWidget" name="centralWidget">
+   <property name="minimumSize">
+    <size>
+     <width>0</width>
+     <height>0</height>
+    </size>
+   </property>
+   <layout class="QVBoxLayout" name="verticalLayout_2">
+    <item>
+     <layout class="QVBoxLayout" name="verticalLayout">
+      <item>
+       <layout class="QHBoxLayout" name="ruudustik_h">
+        <property name="leftMargin">
+         <number>80</number>
+        </property>
+        <property name="topMargin">
+         <number>40</number>
+        </property>
+        <property name="rightMargin">
+         <number>80</number>
+        </property>
+        <property name="bottomMargin">
+         <number>80</number>
+        </property>
+        <item>
+         <layout class="QGridLayout" name="ruudustik">
+          <property name="topMargin">
+           <number>0</number>
+          </property>
+          <property name="spacing">
+           <number>0</number>
+          </property>
+          <item row="0" column="1">
+           <layout class="QGridLayout" name="r_2">
+            <property name="spacing">
+             <number>0</number>
+            </property>
+            <item row="0" column="0">
+             <widget class="Box" name="n_1_4" native="true">
+              <property name="styleSheet">
+               <string notr="true">border-top: 4px solid #414141; border-left: 2px solid #414141; border-bottom: 1px solid #414141;; border-right: 1px solid #414141; background-color: rgba(65, 65, 65, 0); color: rgb(65, 93, 148); </string>
+              </property>
+             </widget>
+            </item>
+            <item row="0" column="1">
+             <widget class="Box" name="n_1_5" native="true">
+              <property name="styleSheet">
+               <string notr="true">border-top: 4px solid #414141; border-left: 1px solid #414141; border-bottom: 1px solid #414141;; border-right: 1px solid #414141; background-color: rgba(65, 65, 65, 0); color: rgb(65, 93, 148); </string>
+              </property>
+             </widget>
+            </item>
+            <item row="0" column="2">
+             <widget class="Box" name="n_1_6" native="true">
+              <property name="styleSheet">
+               <string notr="true">border-top: 4px solid #414141; border-left: 1px solid #414141; border-bottom: 1px solid #414141;; border-right: 2px solid #414141; background-color: rgba(65, 65, 65, 0); color: rgb(65, 93, 148); </string>
+              </property>
+             </widget>
+            </item>
+            <item row="1" column="0">
+             <widget class="Box" name="n_2_4" native="true">
+              <property name="styleSheet">
+               <string notr="true">border-top: 1px solid #414141; border-left: 2px solid #414141; border-bottom: 1px solid #414141;; border-right: 1px solid #414141; background-color: rgba(65, 65, 65, 0); color: rgb(65, 93, 148); </string>
+              </property>
+             </widget>
+            </item>
+            <item row="1" column="1">
+             <widget class="Box" name="n_2_5" native="true">
+              <property name="styleSheet">
+               <string notr="true">border-top: 1px solid #414141; border-left: 1px solid #414141; border-bottom: 1px solid #414141;; border-right: 1px solid #414141; background-color: rgba(65, 65, 65, 0); color: rgb(65, 93, 148); </string>
+              </property>
+             </widget>
+            </item>
+            <item row="1" column="2">
+             <widget class="Box" name="n_2_6" native="true">
+              <property name="styleSheet">
+               <string notr="true">border-top: 1px solid #414141; border-left: 1px solid #414141; border-bottom: 1px solid #414141;; border-right: 2px solid #414141; background-color: rgba(65, 65, 65, 0); color: rgb(65, 93, 148); </string>
+              </property>
+             </widget>
+            </item>
+            <item row="2" column="0">
+             <widget class="Box" name="n_3_4" native="true">
+              <property name="styleSheet">
+               <string notr="true">border-top: 1px solid #414141; border-left: 2px solid #414141; border-bottom: 2px solid #414141;; border-right: 1px solid #414141; background-color: rgba(65, 65, 65, 0); color: rgb(65, 93, 148); </string>
+              </property>
+             </widget>
+            </item>
+            <item row="2" column="1">
+             <widget class="Box" name="n_3_5" native="true">
+              <property name="styleSheet">
+               <string notr="true">border-top: 1px solid #414141; border-left: 1px solid #414141; border-bottom: 2px solid #414141;; border-right: 1px solid #414141; background-color: rgba(65, 65, 65, 0); color: rgb(65, 93, 148); </string>
+              </property>
+             </widget>
+            </item>
+            <item row="2" column="2">
+             <widget class="Box" name="n_3_6" native="true">
+              <property name="styleSheet">
+               <string notr="true">border-top: 1px solid #414141; border-left: 1px solid #414141; border-bottom: 2px solid #414141;; border-right: 2px solid #414141; background-color: rgba(65, 65, 65, 0); color: rgb(65, 93, 148); </string>
+              </property>
+             </widget>
+            </item>
+           </layout>
+          </item>
+          <item row="1" column="1">
+           <layout class="QGridLayout" name="r_5">
+            <property name="spacing">
+             <number>0</number>
+            </property>
+            <item row="0" column="0">
+             <widget class="Box" name="n_4_4" native="true">
+              <property name="styleSheet">
+               <string notr="true">border-top: 2px solid #414141; border-left: 2px solid #414141; border-bottom: 1px solid #414141;; border-right: 1px solid #414141; background-color: rgba(65, 65, 65, 0); color: rgb(65, 93, 148); </string>
+              </property>
+             </widget>
+            </item>
+            <item row="0" column="1">
+             <widget class="Box" name="n_4_5" native="true">
+              <property name="styleSheet">
+               <string notr="true">border-top: 2px solid #414141; border-left: 1px solid #414141; border-bottom: 1px solid #414141;; border-right: 1px solid #414141; background-color: rgba(65, 65, 65, 0); color: rgb(65, 93, 148); </string>
+              </property>
+             </widget>
+            </item>
+            <item row="0" column="2">
+             <widget class="Box" name="n_4_6" native="true">
+              <property name="styleSheet">
+               <string notr="true">border-top: 2px solid #414141; border-left: 1px solid #414141; border-bottom: 1px solid #414141; border-right: 2px solid #414141; background-color: rgba(65, 65, 65, 0); color: rgb(65, 93, 148); </string>
+              </property>
+             </widget>
+            </item>
+            <item row="1" column="0">
+             <widget class="Box" name="n_5_4" native="true">
+              <property name="styleSheet">
+               <string notr="true">border-top: 1px solid #414141; border-left: 2px solid #414141; border-bottom: 1px solid #414141;; border-right: 1px solid #414141; background-color: rgba(65, 65, 65, 0); color: rgb(65, 93, 148); </string>
+              </property>
+             </widget>
+            </item>
+            <item row="1" column="1">
+             <widget class="Box" name="n_5_5" native="true">
+              <property name="styleSheet">
+               <string notr="true">border-top: 1px solid #414141; border-left: 1px solid #414141; border-bottom: 1px solid #414141;; border-right: 1px solid #414141; background-color: rgba(65, 65, 65, 0); color: rgb(65, 93, 148); </string>
+              </property>
+             </widget>
+            </item>
+            <item row="1" column="2">
+             <widget class="Box" name="n_5_6" native="true">
+              <property name="styleSheet">
+               <string notr="true">border-top: 1px solid #414141; border-left: 1px solid #414141; border-bottom: 1px solid #414141; border-right: 2px solid #414141; background-color: rgba(65, 65, 65, 0); color: rgb(65, 93, 148); </string>
+              </property>
+             </widget>
+            </item>
+            <item row="2" column="0">
+             <widget class="Box" name="n_6_4" native="true">
+              <property name="styleSheet">
+               <string notr="true">border-top: 1px solid #414141; border-left: 2px solid #414141; border-bottom: 2px solid #414141; border-right: 1px solid #414141; background-color: rgba(65, 65, 65, 0); color: rgb(65, 93, 148); </string>
+              </property>
+             </widget>
+            </item>
+            <item row="2" column="1">
+             <widget class="Box" name="n_6_5" native="true">
+              <property name="styleSheet">
+               <string notr="true">border-top: 1px solid #414141; border-left: 1px solid #414141; border-bottom: 2px solid #414141;; border-right: 1px solid #414141; background-color: rgba(65, 65, 65, 0); color: rgb(65, 93, 148); </string>
+              </property>
+             </widget>
+            </item>
+            <item row="2" column="2">
+             <widget class="Box" name="n_6_6" native="true">
+              <property name="styleSheet">
+               <string notr="true">border-top: 1px solid #414141; border-left: 1px solid #414141; border-bottom: 2px solid #414141;; border-right: 2px solid #414141; background-color: rgba(65, 65, 65, 0); color: rgb(65, 93, 148); </string>
+              </property>
+             </widget>
+            </item>
+           </layout>
+          </item>
+          <item row="2" column="2">
+           <layout class="QGridLayout" name="r_9">
+            <property name="spacing">
+             <number>0</number>
+            </property>
+            <item row="0" column="0">
+             <widget class="Box" name="n_7_7" native="true">
+              <property name="styleSheet">
+               <string notr="true">border-top: 2px solid #414141; border-left: 2px solid #414141; border-bottom: 1px solid #414141;; border-right: 1px solid #414141; background-color: rgba(65, 65, 65, 0); color: rgb(65, 93, 148); </string>
+              </property>
+             </widget>
+            </item>
+            <item row="0" column="1">
+             <widget class="Box" name="n_7_8" native="true">
+              <property name="styleSheet">
+               <string notr="true">border-top: 2px solid #414141; border-left: 1px solid #414141; border-bottom: 1px solid #414141;; border-right: 1px solid #414141; background-color: rgba(65, 65, 65, 0); color: rgb(65, 93, 148); </string>
+              </property>
+             </widget>
+            </item>
+            <item row="0" column="2">
+             <widget class="Box" name="n_7_9" native="true">
+              <property name="styleSheet">
+               <string notr="true">border-top: 2px solid #414141; border-left: 1px solid #414141; border-bottom: 1px solid #414141; border-right: 4px solid #414141; background-color: rgba(65, 65, 65, 0); color: rgb(65, 93, 148); </string>
+              </property>
+             </widget>
+            </item>
+            <item row="1" column="0">
+             <widget class="Box" name="n_8_7" native="true">
+              <property name="styleSheet">
+               <string notr="true">border-top: 1px solid #414141; border-left: 2px solid #414141; border-bottom: 1px solid #414141;; border-right: 1px solid #414141; background-color: rgba(65, 65, 65, 0); color: rgb(65, 93, 148); </string>
+              </property>
+             </widget>
+            </item>
+            <item row="1" column="1">
+             <widget class="Box" name="n_8_8" native="true">
+              <property name="styleSheet">
+               <string notr="true">border-top: 1px solid #414141; border-left: 1px solid #414141; border-bottom: 1px solid #414141;; border-right: 1px solid #414141; background-color: rgba(65, 65, 65, 0); color: rgb(65, 93, 148); </string>
+              </property>
+             </widget>
+            </item>
+            <item row="1" column="2">
+             <widget class="Box" name="n_8_9" native="true">
+              <property name="styleSheet">
+               <string notr="true">border-top: 1px solid #414141; border-left: 1px solid #414141; border-bottom: 1px solid #414141;; border-right: 4px solid #414141; background-color: rgba(65, 65, 65, 0); color: rgb(65, 93, 148); </string>
+              </property>
+             </widget>
+            </item>
+            <item row="2" column="0">
+             <widget class="Box" name="n_9_7" native="true">
+              <property name="styleSheet">
+               <string notr="true">border-top: 1px solid #414141; border-left: 2px solid #414141; border-bottom: 4px solid #414141; border-right: 1px solid #414141; background-color: rgba(65, 65, 65, 0); color: rgb(65, 93, 148); </string>
+              </property>
+             </widget>
+            </item>
+            <item row="2" column="1">
+             <widget class="Box" name="n_9_8" native="true">
+              <property name="styleSheet">
+               <string notr="true">border-top: 1px solid #414141; border-left: 1px solid #414141; border-bottom: 4px solid #414141;; border-right: 1px solid #414141; background-color: rgba(65, 65, 65, 0); color: rgb(65, 93, 148); </string>
+              </property>
+             </widget>
+            </item>
+            <item row="2" column="2">
+             <widget class="Box" name="n_9_9" native="true">
+              <property name="styleSheet">
+               <string notr="true">border-top: 1px solid #414141; border-left: 1px solid #414141; border-bottom: 4px solid #414141; border-right: 4px solid #414141; background-color: rgba(65, 65, 65, 0); color: rgb(65, 93, 148); </string>
+              </property>
+             </widget>
+            </item>
+           </layout>
+          </item>
+          <item row="0" column="0">
+           <layout class="QGridLayout" name="r_1">
+            <property name="spacing">
+             <number>0</number>
+            </property>
+            <item row="0" column="0">
+             <widget class="Box" name="n_1_1" native="true">
+              <property name="styleSheet">
+               <string notr="true">border-top: 4px solid #414141; border-left: 4px solid #414141; border-bottom: 1px solid #414141;; border-right: 1px solid #414141; background-color: rgba(65, 65, 65, 0); color: rgb(65, 93, 148); </string>
+              </property>
+             </widget>
+            </item>
+            <item row="0" column="1">
+             <widget class="Box" name="n_1_2" native="true">
+              <property name="styleSheet">
+               <string notr="true">border-top: 4px solid #414141; border-left: 1px solid #414141; border-bottom: 1px solid #414141;; border-right: 1px solid #414141; background-color: rgba(65, 65, 65, 0); color: rgb(65, 93, 148); </string>
+              </property>
+             </widget>
+            </item>
+            <item row="0" column="2">
+             <widget class="Box" name="n_1_3" native="true">
+              <property name="styleSheet">
+               <string notr="true">border-top: 4px solid #414141; border-left: 1px solid #414141; border-bottom: 1px solid #414141;; border-right: 2px solid #414141; background-color: rgba(65, 65, 65, 0); color: rgb(65, 93, 148); </string>
+              </property>
+             </widget>
+            </item>
+            <item row="1" column="0">
+             <widget class="Box" name="n_2_1" native="true">
+              <property name="styleSheet">
+               <string notr="true">border-top: 1px solid #414141; border-left: 4px solid #414141; border-bottom: 1px solid #414141;; border-right: 1px solid #414141; background-color: rgba(65, 65, 65, 0); color: rgb(65, 93, 148); </string>
+              </property>
+             </widget>
+            </item>
+            <item row="1" column="1">
+             <widget class="Box" name="n_2_2" native="true">
+              <property name="styleSheet">
+               <string notr="true">border-top: 1px solid #414141; border-left: 1px solid #414141; border-bottom: 1px solid #414141;; border-right: 1px solid #414141; background-color: rgba(65, 65, 65, 0); color: rgb(65, 93, 148); </string>
+              </property>
+             </widget>
+            </item>
+            <item row="1" column="2">
+             <widget class="Box" name="n_2_3" native="true">
+              <property name="styleSheet">
+               <string notr="true">border-top: 1px solid #414141; border-left: 1px solid #414141; border-bottom: 1px solid #414141;; border-right: 2px solid #414141; background-color: rgba(65, 65, 65, 0); color: rgb(65, 93, 148); </string>
+              </property>
+             </widget>
+            </item>
+            <item row="2" column="0">
+             <widget class="Box" name="n_3_1" native="true">
+              <property name="styleSheet">
+               <string notr="true">border-top: 1px solid #414141; border-left: 4px solid #414141; border-bottom: 2px solid #414141;; border-right: 1px solid #414141; background-color: rgba(65, 65, 65, 0); color: rgb(65, 93, 148); </string>
+              </property>
+             </widget>
+            </item>
+            <item row="2" column="1">
+             <widget class="Box" name="n_3_2" native="true">
+              <property name="styleSheet">
+               <string notr="true">border-top: 1px solid #414141; border-left: 1px solid #414141; border-bottom: 2px solid #414141;; border-right: 1px solid #414141; background-color: rgba(65, 65, 65, 0); color: rgb(65, 93, 148); </string>
+              </property>
+             </widget>
+            </item>
+            <item row="2" column="2">
+             <widget class="Box" name="n_3_3" native="true">
+              <property name="styleSheet">
+               <string notr="true">border-top: 1px solid #414141; border-left: 1px solid #414141; border-bottom: 2px solid #414141;; border-right: 2px solid #414141; background-color: rgba(65, 65, 65, 0); color: rgb(65, 93, 148); </string>
+              </property>
+             </widget>
+            </item>
+           </layout>
+          </item>
+          <item row="2" column="1">
+           <layout class="QGridLayout" name="r_8">
+            <property name="spacing">
+             <number>0</number>
+            </property>
+            <item row="0" column="0">
+             <widget class="Box" name="n_7_4" native="true">
+              <property name="styleSheet">
+               <string notr="true">border-top: 2px solid #414141; border-left: 2px solid #414141; border-bottom: 1px solid #414141;; border-right: 1px solid #414141; background-color: rgba(65, 65, 65, 0); color: rgb(65, 93, 148); </string>
+              </property>
+             </widget>
+            </item>
+            <item row="0" column="1">
+             <widget class="Box" name="n_7_5" native="true">
+              <property name="styleSheet">
+               <string notr="true">border-top: 2px solid #414141; border-left: 1px solid #414141; border-bottom: 1px solid #414141;; border-right: 1px solid #414141; background-color: rgba(65, 65, 65, 0); color: rgb(65, 93, 148); </string>
+              </property>
+             </widget>
+            </item>
+            <item row="0" column="2">
+             <widget class="Box" name="n_7_6" native="true">
+              <property name="styleSheet">
+               <string notr="true">border-top: 2px solid #414141; border-left: 1px solid #414141; border-bottom: 1px solid #414141; border-right: 2px solid #414141; background-color: rgba(65, 65, 65, 0); color: rgb(65, 93, 148); </string>
+              </property>
+             </widget>
+            </item>
+            <item row="1" column="0">
+             <widget class="Box" name="n_8_4" native="true">
+              <property name="styleSheet">
+               <string notr="true">border-top: 1px solid #414141; border-left: 2px solid #414141; border-bottom: 1px solid #414141;; border-right: 1px solid #414141; background-color: rgba(65, 65, 65, 0); color: rgb(65, 93, 148); </string>
+              </property>
+             </widget>
+            </item>
+            <item row="1" column="1">
+             <widget class="Box" name="n_8_5" native="true">
+              <property name="styleSheet">
+               <string notr="true">border-top: 1px solid #414141; border-left: 1px solid #414141; border-bottom: 1px solid #414141;; border-right: 1px solid #414141; background-color: rgba(65, 65, 65, 0); color: rgb(65, 93, 148); </string>
+              </property>
+             </widget>
+            </item>
+            <item row="1" column="2">
+             <widget class="Box" name="n_8_6" native="true">
+              <property name="styleSheet">
+               <string notr="true">border-top: 1px solid #414141; border-left: 1px solid #414141; border-bottom: 1px solid #414141;; border-right: 2px solid #414141; background-color: rgba(65, 65, 65, 0); color: rgb(65, 93, 148); </string>
+              </property>
+             </widget>
+            </item>
+            <item row="2" column="0">
+             <widget class="Box" name="n_9_4" native="true">
+              <property name="styleSheet">
+               <string notr="true">border-top: 1px solid #414141; border-left: 2px solid #414141; border-bottom: 4px solid #414141; border-right: 1px solid #414141; background-color: rgba(65, 65, 65, 0); color: rgb(65, 93, 148); </string>
+              </property>
+             </widget>
+            </item>
+            <item row="2" column="1">
+             <widget class="Box" name="n_9_5" native="true">
+              <property name="styleSheet">
+               <string notr="true">border-top: 1px solid #414141; border-left: 1px solid #414141; border-bottom: 4px solid #414141;; border-right: 1px solid #414141; background-color: rgba(65, 65, 65, 0); color: rgb(65, 93, 148); </string>
+              </property>
+             </widget>
+            </item>
+            <item row="2" column="2">
+             <widget class="Box" name="n_9_6" native="true">
+              <property name="styleSheet">
+               <string notr="true">border-top: 1px solid #414141; border-left: 1px solid #414141; border-bottom: 4px solid #414141; border-right: 2px solid #414141; background-color: rgba(65, 65, 65, 0); color: rgb(65, 93, 148); </string>
+              </property>
+             </widget>
+            </item>
+           </layout>
+          </item>
+          <item row="2" column="0">
+           <layout class="QGridLayout" name="r_7">
+            <property name="spacing">
+             <number>0</number>
+            </property>
+            <item row="2" column="0">
+             <widget class="Box" name="n_9_1" native="true">
+              <property name="styleSheet">
+               <string notr="true">border-top: 1px solid #414141; border-left: 4px solid #414141; border-bottom: 4px solid #414141; border-right: 1px solid #414141; background-color: rgba(65, 65, 65, 0); color: rgb(65, 93, 148); </string>
+              </property>
+             </widget>
+            </item>
+            <item row="0" column="2">
+             <widget class="Box" name="n_7_3" native="true">
+              <property name="styleSheet">
+               <string notr="true">border-top: 2px solid #414141; border-left: 1px solid #414141; border-bottom: 1px solid #414141; border-right: 2px solid #414141; background-color: rgba(65, 65, 65, 0); color: rgb(65, 93, 148); </string>
+              </property>
+             </widget>
+            </item>
+            <item row="2" column="2">
+             <widget class="Box" name="n_9_3" native="true">
+              <property name="styleSheet">
+               <string notr="true">border-top: 1px solid #414141; border-left: 1px solid #414141; border-bottom: 4px solid #414141; border-right: 2px solid #414141; background-color: rgba(65, 65, 65, 0); color: rgb(65, 93, 148); </string>
+              </property>
+             </widget>
+            </item>
+            <item row="1" column="2">
+             <widget class="Box" name="n_8_3" native="true">
+              <property name="styleSheet">
+               <string notr="true">border-top: 1px solid #414141; border-left: 1px solid #414141; border-bottom: 1px solid #414141;; border-right: 2px solid #414141; background-color: rgba(65, 65, 65, 0); color: rgb(65, 93, 148); </string>
+              </property>
+             </widget>
+            </item>
+            <item row="1" column="0">
+             <widget class="Box" name="n_8_1" native="true">
+              <property name="styleSheet">
+               <string notr="true">border-top: 1px solid #414141; border-left: 4px solid #414141; border-bottom: 1px solid #414141;; border-right: 1px solid #414141; background-color: rgba(65, 65, 65, 0); color: rgb(65, 93, 148); </string>
+              </property>
+             </widget>
+            </item>
+            <item row="0" column="0">
+             <widget class="Box" name="n_7_1" native="true">
+              <property name="styleSheet">
+               <string notr="true">border-top: 2px solid #414141; border-left: 4px solid #414141; border-bottom: 1px solid #414141;; border-right: 1px solid #414141; background-color: rgba(65, 65, 65, 0); color: rgb(65, 93, 148); </string>
+              </property>
+             </widget>
+            </item>
+            <item row="2" column="1">
+             <widget class="Box" name="n_9_2" native="true">
+              <property name="styleSheet">
+               <string notr="true">border-top: 1px solid #414141; border-left: 1px solid #414141; border-bottom: 4px solid #414141;; border-right: 1px solid #414141; background-color: rgba(65, 65, 65, 0); color: rgb(65, 93, 148); </string>
+              </property>
+             </widget>
+            </item>
+            <item row="1" column="1">
+             <widget class="Box" name="n_8_2" native="true">
+              <property name="styleSheet">
+               <string notr="true">border-top: 1px solid #414141; border-left: 1px solid #414141; border-bottom: 1px solid #414141;; border-right: 1px solid #414141; background-color: rgba(65, 65, 65, 0); color: rgb(65, 93, 148); </string>
+              </property>
+             </widget>
+            </item>
+            <item row="0" column="1">
+             <widget class="Box" name="n_7_2" native="true">
+              <property name="styleSheet">
+               <string notr="true">border-top: 2px solid #414141; border-left: 1px solid #414141; border-bottom: 1px solid #414141;; border-right: 1px solid #414141; background-color: rgba(65, 65, 65, 0); color: rgb(65, 93, 148); </string>
+              </property>
+             </widget>
+            </item>
+           </layout>
+          </item>
+          <item row="1" column="2">
+           <layout class="QGridLayout" name="r_6">
+            <property name="spacing">
+             <number>0</number>
+            </property>
+            <item row="0" column="0">
+             <widget class="Box" name="n_4_7" native="true">
+              <property name="styleSheet">
+               <string notr="true">border-top: 2px solid #414141; border-left: 2px solid #414141; border-bottom: 1px solid #414141;; border-right: 1px solid #414141; background-color: rgba(65, 65, 65, 0); color: rgb(65, 93, 148); </string>
+              </property>
+             </widget>
+            </item>
+            <item row="0" column="1">
+             <widget class="Box" name="n_4_8" native="true">
+              <property name="styleSheet">
+               <string notr="true">border-top: 2px solid #414141; border-left: 1px solid #414141; border-bottom: 1px solid #414141;; border-right: 1px solid #414141; background-color: rgba(65, 65, 65, 0); color: rgb(65, 93, 148); </string>
+              </property>
+             </widget>
+            </item>
+            <item row="0" column="2">
+             <widget class="Box" name="n_4_9" native="true">
+              <property name="styleSheet">
+               <string notr="true">border-top: 2px solid #414141; border-left: 1px solid #414141; border-bottom: 1px solid #414141; border-right: 4px solid #414141; background-color: rgba(65, 65, 65, 0); color: rgb(65, 93, 148); </string>
+              </property>
+             </widget>
+            </item>
+            <item row="1" column="0">
+             <widget class="Box" name="n_5_7" native="true">
+              <property name="styleSheet">
+               <string notr="true">border-top: 1px solid #414141; border-left: 2px solid #414141; border-bottom: 1px solid #414141;; border-right: 1px solid #414141; background-color: rgba(65, 65, 65, 0); color: rgb(65, 93, 148); </string>
+              </property>
+             </widget>
+            </item>
+            <item row="1" column="1">
+             <widget class="Box" name="n_5_8" native="true">
+              <property name="styleSheet">
+               <string notr="true">border-top: 1px solid #414141; border-left: 1px solid #414141; border-bottom: 1px solid #414141;; border-right: 1px solid #414141; background-color: rgba(65, 65, 65, 0); color: rgb(65, 93, 148); </string>
+              </property>
+             </widget>
+            </item>
+            <item row="1" column="2">
+             <widget class="Box" name="n_5_9" native="true">
+              <property name="styleSheet">
+               <string notr="true">border-top: 1px solid #414141; border-left: 1px solid #414141; border-bottom: 1px solid #414141;; border-right: 4px solid #414141; background-color: rgba(65, 65, 65, 0); color: rgb(65, 93, 148); </string>
+              </property>
+             </widget>
+            </item>
+            <item row="2" column="0">
+             <widget class="Box" name="n_6_7" native="true">
+              <property name="styleSheet">
+               <string notr="true">border-top: 1px solid #414141; border-left: 2px solid #414141; border-bottom: 2px solid #414141; border-right: 1px solid #414141; background-color: rgba(65, 65, 65, 0); color: rgb(65, 93, 148); </string>
+              </property>
+             </widget>
+            </item>
+            <item row="2" column="1">
+             <widget class="Box" name="n_6_8" native="true">
+              <property name="styleSheet">
+               <string notr="true">border-top: 1px solid #414141; border-left: 1px solid #414141; border-bottom: 2px solid #414141;; border-right: 1px solid #414141; background-color: rgba(65, 65, 65, 0); color: rgb(65, 93, 148); </string>
+              </property>
+             </widget>
+            </item>
+            <item row="2" column="2">
+             <widget class="Box" name="n_6_9" native="true">
+              <property name="styleSheet">
+               <string notr="true">border-top: 1px solid #414141; border-left: 1px solid #414141; border-bottom: 2px solid #414141; border-right: 4px solid #414141; background-color: rgba(65, 65, 65, 0); color: rgb(65, 93, 148); </string>
+              </property>
+             </widget>
+            </item>
+           </layout>
+          </item>
+          <item row="0" column="2">
+           <layout class="QGridLayout" name="r_3">
+            <property name="spacing">
+             <number>0</number>
+            </property>
+            <item row="0" column="0">
+             <widget class="Box" name="n_1_7" native="true">
+              <property name="styleSheet">
+               <string notr="true">border-top: 4px solid #414141; border-left: 2px solid #414141; border-bottom: 1px solid #414141;; border-right: 1px solid #414141; background-color: rgba(65, 65, 65, 0); color: rgb(65, 93, 148); </string>
+              </property>
+             </widget>
+            </item>
+            <item row="0" column="1">
+             <widget class="Box" name="n_1_8" native="true">
+              <property name="styleSheet">
+               <string notr="true">border-top: 4px solid #414141; border-left: 1px solid #414141; border-bottom: 1px solid #414141;; border-right: 1px solid #414141; background-color: rgba(65, 65, 65, 0); color: rgb(65, 93, 148); </string>
+              </property>
+             </widget>
+            </item>
+            <item row="0" column="2">
+             <widget class="Box" name="n_1_9" native="true">
+              <property name="styleSheet">
+               <string notr="true">border-top: 4px solid #414141; border-left: 1px solid #414141; border-bottom: 1px solid #414141;; border-right: 4px solid #414141; background-color: rgba(65, 65, 65, 0); color: rgb(65, 93, 148); </string>
+              </property>
+             </widget>
+            </item>
+            <item row="1" column="0">
+             <widget class="Box" name="n_2_7" native="true">
+              <property name="styleSheet">
+               <string notr="true">border-top: 1px solid #414141; border-left: 2px solid #414141; border-bottom: 1px solid #414141;; border-right: 1px solid #414141; background-color: rgba(65, 65, 65, 0); color: rgb(65, 93, 148); </string>
+              </property>
+             </widget>
+            </item>
+            <item row="1" column="1">
+             <widget class="Box" name="n_2_8" native="true">
+              <property name="styleSheet">
+               <string notr="true">border-top: 1px solid #414141; border-left: 1px solid #414141; border-bottom: 1px solid #414141;; border-right: 1px solid #414141; background-color: rgba(65, 65, 65, 0); color: rgb(65, 93, 148); </string>
+              </property>
+             </widget>
+            </item>
+            <item row="1" column="2">
+             <widget class="Box" name="n_2_9" native="true">
+              <property name="styleSheet">
+               <string notr="true">border-top: 1px solid #414141; border-left: 1px solid #414141; border-bottom: 1px solid #414141;; border-right: 4px solid #414141; background-color: rgba(65, 65, 65, 0); color: rgb(65, 93, 148); </string>
+              </property>
+             </widget>
+            </item>
+            <item row="2" column="0">
+             <widget class="Box" name="n_3_7" native="true">
+              <property name="styleSheet">
+               <string notr="true">border-top: 1px solid #414141; border-left: 2px solid #414141; border-bottom: 2px solid #414141; border-right: 1px solid #414141; background-color: rgba(65, 65, 65, 0); color: rgb(65, 93, 148); </string>
+              </property>
+             </widget>
+            </item>
+            <item row="2" column="1">
+             <widget class="Box" name="n_3_8" native="true">
+              <property name="styleSheet">
+               <string notr="true">border-top: 1px solid #414141; border-left: 1px solid #414141; border-bottom: 2px solid #414141;; border-right: 1px solid #414141; background-color: rgba(65, 65, 65, 0); color: rgb(65, 93, 148); </string>
+              </property>
+             </widget>
+            </item>
+            <item row="2" column="2">
+             <widget class="Box" name="n_3_9" native="true">
+              <property name="styleSheet">
+               <string notr="true">border-top: 1px solid #414141; border-left: 1px solid #414141; border-bottom: 2px solid #414141; border-right: 4px solid #414141; background-color: rgba(65, 65, 65, 0); color: rgb(65, 93, 148); </string>
+              </property>
+             </widget>
+            </item>
+           </layout>
+          </item>
+          <item row="1" column="0">
+           <layout class="QGridLayout" name="r_4">
+            <property name="spacing">
+             <number>0</number>
+            </property>
+            <item row="0" column="0">
+             <widget class="Box" name="n_4_1" native="true">
+              <property name="styleSheet">
+               <string notr="true">border-top: 2px solid #414141; border-left: 4px solid #414141; border-bottom: 1px solid #414141;; border-right: 1px solid #414141; background-color: rgba(65, 65, 65, 0); color: rgb(65, 93, 148); </string>
+              </property>
+             </widget>
+            </item>
+            <item row="0" column="1">
+             <widget class="Box" name="n_4_2" native="true">
+              <property name="styleSheet">
+               <string notr="true">border-top: 2px solid #414141; border-left: 1px solid #414141; border-bottom: 1px solid #414141;; border-right: 1px solid #414141; background-color: rgba(65, 65, 65, 0); color: rgb(65, 93, 148); </string>
+              </property>
+             </widget>
+            </item>
+            <item row="0" column="2">
+             <widget class="Box" name="n_4_3" native="true">
+              <property name="styleSheet">
+               <string notr="true">border-top: 2px solid #414141; border-left: 1px solid #414141; border-bottom: 1px solid #414141; border-right: 2px solid #414141; background-color: rgba(65, 65, 65, 0); color: rgb(65, 93, 148); </string>
+              </property>
+             </widget>
+            </item>
+            <item row="1" column="0">
+             <widget class="Box" name="n_5_1" native="true">
+              <property name="styleSheet">
+               <string notr="true">border-top: 1px solid #414141; border-left: 4px solid #414141; border-bottom: 1px solid #414141;; border-right: 1px solid #414141; background-color: rgba(65, 65, 65, 0); color: rgb(65, 93, 148); </string>
+              </property>
+             </widget>
+            </item>
+            <item row="1" column="1">
+             <widget class="Box" name="n_5_2" native="true">
+              <property name="styleSheet">
+               <string notr="true">border-top: 1px solid #414141; border-left: 1px solid #414141; border-bottom: 1px solid #414141;; border-right: 1px solid #414141; background-color: rgba(65, 65, 65, 0); color: rgb(65, 93, 148); </string>
+              </property>
+             </widget>
+            </item>
+            <item row="1" column="2">
+             <widget class="Box" name="n_5_3" native="true">
+              <property name="styleSheet">
+               <string notr="true">border-top: 1px solid #414141; border-left: 1px solid #414141; border-bottom: 1px solid #414141;; border-right: 2px solid #414141; background-color: rgba(65, 65, 65, 0); color: rgb(65, 93, 148); </string>
+              </property>
+             </widget>
+            </item>
+            <item row="2" column="0">
+             <widget class="Box" name="n_6_1" native="true">
+              <property name="styleSheet">
+               <string notr="true">border-top: 1px solid #414141; border-left: 4px solid #414141; border-bottom: 2px solid #414141; border-right: 1px solid #414141; background-color: rgba(65, 65, 65, 0); color: rgb(65, 93, 148); </string>
+              </property>
+             </widget>
+            </item>
+            <item row="2" column="1">
+             <widget class="Box" name="n_6_2" native="true">
+              <property name="styleSheet">
+               <string notr="true">border-top: 1px solid #414141; border-left: 1px solid #414141; border-bottom: 2px solid #414141;; border-right: 1px solid #414141; background-color: rgba(65, 65, 65, 0); color: rgb(65, 93, 148); </string>
+              </property>
+             </widget>
+            </item>
+            <item row="2" column="2">
+             <widget class="Box" name="n_6_3" native="true">
+              <property name="styleSheet">
+               <string notr="true">border-top: 1px solid #414141; border-left: 1px solid #414141; border-bottom: 2px solid #414141; border-right: 2px solid #414141; background-color: rgba(65, 65, 65, 0); color: rgb(65, 93, 148); </string>
+              </property>
+             </widget>
+            </item>
+           </layout>
+          </item>
+         </layout>
+        </item>
+       </layout>
+      </item>
+      <item>
+       <layout class="QHBoxLayout" name="nupud_h">
+        <property name="spacing">
+         <number>20</number>
+        </property>
+        <property name="sizeConstraint">
+         <enum>QLayout::SetDefaultConstraint</enum>
+        </property>
+        <item>
+         <spacer name="horizontalSpacer">
+          <property name="orientation">
+           <enum>Qt::Horizontal</enum>
+          </property>
+          <property name="sizeType">
+           <enum>QSizePolicy::Fixed</enum>
+          </property>
+          <property name="sizeHint" stdset="0">
+           <size>
+            <width>40</width>
+            <height>20</height>
+           </size>
+          </property>
+         </spacer>
+        </item>
+        <item>
+         <widget class="QPushButton" name="startButton">
+          <property name="text">
+           <string>New Game</string>
+          </property>
+         </widget>
+        </item>
+        <item>
+         <widget class="QPushButton" name="resetButton">
+          <property name="text">
+           <string>Reset</string>
+          </property>
+         </widget>
+        </item>
+        <item>
+         <widget class="QPushButton" name="checkButton">
+          <property name="text">
+           <string>Check</string>
+          </property>
+         </widget>
+        </item>
+        <item>
+         <widget class="QPushButton" name="clearButton">
+          <property name="text">
+           <string>Clear</string>
+          </property>
+         </widget>
+        </item>
+        <item>
+         <widget class="QPushButton" name="solutionButton">
+          <property name="text">
+           <string>Solution</string>
+          </property>
+         </widget>
+        </item>
+        <item>
+         <spacer name="horizontalSpacer_2">
+          <property name="orientation">
+           <enum>Qt::Horizontal</enum>
+          </property>
+          <property name="sizeType">
+           <enum>QSizePolicy::Fixed</enum>
+          </property>
+          <property name="sizeHint" stdset="0">
+           <size>
+            <width>40</width>
+            <height>20</height>
+           </size>
+          </property>
+         </spacer>
+        </item>
+       </layout>
+      </item>
+     </layout>
+    </item>
+    <item>
+     <spacer name="verticalSpacer">
+      <property name="orientation">
+       <enum>Qt::Vertical</enum>
+      </property>
+      <property name="sizeType">
+       <enum>QSizePolicy::Fixed</enum>
+      </property>
+      <property name="sizeHint" stdset="0">
+       <size>
+        <width>20</width>
+        <height>20</height>
+       </size>
+      </property>
+     </spacer>
+    </item>
+   </layout>
+  </widget>
+ </widget>
+ <layoutdefault spacing="6" margin="11"/>
+ <customwidgets>
+  <customwidget>
+   <class>Box</class>
+   <extends>QWidget</extends>
+   <header>box.h</header>
+  </customwidget>
+ </customwidgets>
+ <resources/>
+ <connections/>
+</ui>
